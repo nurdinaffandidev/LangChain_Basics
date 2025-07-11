@@ -1,9 +1,17 @@
+# Installs the core langchain package along with optional dependencies specifically for LLM integrations (like OpenAI, Hugging Face, and others).
 pip install 'langchain[llms]'
 
+# Installs the official OpenAI Python client library (openai),
 pip install openai
 
+# Installs python-dotenv, a small library to read environment variables from a .env file.
 pip install python-dotenv
 
+# -U means "upgrade to the latest version".
+# installs (or updates):
+    - langchain: the core LangChain framework.
+    - langchain-openai: LangChain's official wrapper around OpenAI's API for smoother use with LangChain chains, agents, etc.
 pip install -U langchain langchain-openai
 
+# installs the LangChain integration package for Ollama, enabling you to use ChatOllama, OllamaEmbeddings, and more inside LangChain.
 pip install -U langchain-ollama
