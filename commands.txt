@@ -1,0 +1,9 @@
+pip install 'langchain[llms]'
+
+pip install openai
+
+pip install python-dotenv
+
+pip install -U langchain langchain-openai
+
+pip install -U langchain-ollama
